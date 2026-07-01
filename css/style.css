@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff6f0;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+header {
+    height: 90px;
+
+    background-color: #ef4f5f;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 60px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* LOGO */
+
+.logo img {
+    width: 160px;
+    object-fit: contain;
+
+    filter: brightness(1.1);
+
+    transition: 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+/* NAVBAR */
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+ul li a {
+    text-decoration: none;
+
+    color: #ffe7cf;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color: #ffbf69;
+}
+
+/* MAIN SECTION */
+
+main {
+    height: calc(100vh - 90px);
+
+    background-image:
+        linear-gradient(
+            rgba(140, 60, 47,0.5 ),
+            rgba(140, 60, 47,0.5)
+        ),
+        url("../img/foodd.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+/* CENTER IMAGE */
+
+.center-logo {
+    width: 400px;
+
+    margin-bottom: 25px;
+
+    filter: drop-shadow(0 8px 20px rgba(0,0,0,0.35));
+
+    object-fit: contain;
+}
+
+/* HEADING */
+
+main p {
+    font-size: 44px;
+    font-weight: bold;
+
+    max-width: 800px;
+
+    color: #fff3e6;
+
+    line-height: 1.4;
+
+    margin-bottom: 30px;
+}
+
+/* SEARCH BAR */
+
+main input {
+    width: 60%;
+    max-width: 700px;
+
+    padding: 18px 22px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 14px;
+
+    font-size: 17px;
+
+    background-color: rgba(255,255,255,0.95);
+
+    color: #5a2d24;
+
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+
+    transition: 0.3s;
+}
+
+main input:focus {
+    transform: scale(1.02);
+
+    box-shadow: 0 8px 24px rgba(255,191,105,0.35);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #ef4f5f;
+
+    color: #ffe7cf;
+
+    text-align: center;
+
+    padding: 18px;
+
+    font-size: 15px;
+}
+
+/* FLOAT ANIMATION */
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
